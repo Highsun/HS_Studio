@@ -1,0 +1,19 @@
+.map {
+    margin-left: 10%;
+    position: relative;
+    width: 80%;
+    padding-top: 50%;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(97, 71, 241);
+    border-radius: 10px;
+}
+.information {
+    margin-left: 5%;
+    padding: none;
+}

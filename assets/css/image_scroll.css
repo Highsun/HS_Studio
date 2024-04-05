@@ -1,0 +1,10 @@
+.image-scroll {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.image-scroll img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+}
