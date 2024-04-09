@@ -20,22 +20,7 @@
     text-decoration: none;
     color: inherit;
 }
-@media screen and (max-width: 600px) {
-    .image-container img {
-        width: calc(95% - 60px);
-        margin-left: 45px;
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .image-container img {
-        width: calc(90% - 60px);
-        margin-left: 30px;
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
-}
+
 .image-wrapper {
     position: relative;
 }
@@ -47,7 +32,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    color: rgb(97, 71, 241);
+    color: rgb(101, 27, 243);
     box-sizing: border-box;
     text-align: center;
 }

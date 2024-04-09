@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="H.S. Studio, 电子科技大学">
     <meta name="description" content="这是H.S. Studio工作室的官方网站。">
@@ -14,9 +15,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/text.css">
     <link rel="stylesheet" type="text/css" href="assets/css/image_link.css">
     <link rel="stylesheet" type="text/css" href="assets/css/image_scroll.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="assets/css/annotation.css">
-
-    <script src="assets/js/copyText.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNW9V05QYS"></script>
@@ -31,8 +31,13 @@
 <body>
     <header>
         <h1 id="top">H.S. Studio</h1>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-list" id="navbarList">
                 <li><a href="#welcome">欢迎</a></li>
                 <li><a href="#works">作品集</a></li>
                 <li><a href="#author">作者说</a></li>
@@ -42,6 +47,9 @@
             </ul>
         </nav>
     </header>
+    <script src="assets/js/copyText.js"></script>
+    <script src="assets/js/navbar.js"></script>
+
     <p class="blank"></p>
     <h2 id="welcome"><span style="background-color: #fff;">&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;欢 迎</h2>
     <p style="height: 8px;"></p>
@@ -68,13 +76,13 @@
         <div class="image-wrapper">
             <a href="pages/program.html" class="image-link">
                 <img src="assets/images/works/program.png" alt="program">
-                <div class="caption">软件开发</div>
+                <div class="caption">编程开发</div>
             </a>
         </div>
         <div class="image-wrapper">
             <a href="pages/writing.html" class="image-link">
                 <img src="assets/images/works/writing.jpeg" alt="writing">
-                <div class="caption">打油诗集</div>
+                <div class="caption">诗歌创作</div>
             </a>
         </div>
         <div class="image-wrapper">
