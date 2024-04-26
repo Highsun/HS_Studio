@@ -13,6 +13,13 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/text.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/annotation.css">
 
+    <style>
+        div.pdf_show {
+            width: 100%;
+            height: 80vh;
+        }
+    </style>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNW9V05QYS"></script>
     <script>
@@ -24,13 +31,12 @@
     </script>
 </head>
 <body>
-    <header class="pages"><h1><a href="../index.html">H.S. Studio</a></h1></header>
-    <p class="blank"></p>
+    <header class="pages" style="border-bottom: 2px solid #fff;"><h1><a href="../index.html">H.S. Studio</a></h1></header>
     <h2><span style="background-color: #fff;">&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;隐 私 政 策</h2>
 
-    <iframe src="../data/privacy_policy/privacy_policy.pdf" width="100%" height="600px" frameborder="0">
-        <p class="text">您的浏览器不支持查看 PDF 文件，请下载 PDF 文件以查看。</p>
-    </iframe>
+    <div class="pdf_show">
+        <embed name="privacy_policy" src="../data/privacy_policy/privacy_policy.pdf" type="application/pdf" width="100%" height="100%">
+    </div>
     <p class="text"><a href="../data/privacy_policy/privacy_policy.pdf" download>下载《隐私政策》PDF文件</a></p>
     
     <footer>
