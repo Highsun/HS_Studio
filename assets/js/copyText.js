@@ -9,6 +9,6 @@ function copyText() {
     if (successful) {
         alert("主页网址已成功复制到剪贴板！");
     } else {
-        alert("复制失败，请手动复制网址：");
+        alert("复制失败，请手动复制主页网址：https://highsun.github.io/HS_Studio/");
     }
 }
