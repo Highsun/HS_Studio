@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/text.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/annotation.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/popup.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/feedback.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/buttons.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNW9V05QYS"></script>
@@ -26,7 +29,312 @@
 <body>
     <header class="pages" style="border-bottom: 2px solid #fff;"><h1><a href="../index.html">H.S. Studio</a></h1></header>
     <h2><span style="background-color: #fff;">&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;用 户 反 馈</h2>
-    <p class="annotation">（此页面仍在测试中，尚不可用，欢迎您通过电子邮件 <i class="fa-solid fa-envelope"></i> <a href="mailto:1339687616@qq.com">1339687616@qq.com</a> 向我们提供反馈，感谢您的宝贵意见！）</p>
+    
+    <div id="popup" class="popup">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+        <p class="text" style="text-align: center; text-indent: 0; font-weight: bolder;">用户反馈使用说明</p>
+        <p class="text">1、用户反馈包含用户问卷和自主反馈两部分。</p>
+        <p class="text">2、用户调查问卷大约耗时 2 分钟，我们强烈建议您进行填写，这对我们有非常大的帮助！如果您想跳过此部分，请在表头处单击“跳过”以前往自主反馈部分。</p>
+        <p class="text">3、自主反馈部分带有 <span style="color: red;">*</span> 标记的项目必填，其余项目选填。</p>
+        <p class="text">感谢您对本网站提出的宝贵意见！</p>
+        <p class="annotation">注：用户反馈功能正在测试中，暂不可用。欢迎您通过电子邮件 <i class="fa-solid fa-envelope"></i> &nbsp;<a href="mailto:1339687616@qq.com">1339687616@qq.com</a> 向我们提供反馈！</p>
+    </div>
+    <script src="../assets/js/popup.js"></script>
+
+    <fieldset class="outside">
+        <legend class="outside">用户问卷</legend><br>
+        <label>如果您不想填写此部分，请点击 <a href="#personal" style="font-weight: bolder;">此处</a> 跳过。</label><br>
+        <form target="_blank" action="../assets/php/feedback_questionnaire.php" method="get" autocomplete="off">
+            <fieldset class="inside">
+                <legend class="inside"><span style="color: red;">*</span> 了解到本网站的途径</legend><br>
+
+                <p class="text" style="padding: 0; margin: 0;">你通过何种途径首次了解并访问本网站？</p>
+                <label style="padding-left: 55px;">
+                    <input type="radio" name="T1" value="A1-1" requied>
+                    我是尊贵的内测用户！
+                </label>
+                <label style="padding-left: 55px;">
+                    <input type="radio" name="T1" value="A1-2" required>
+                    亲朋好友的推荐与分享
+                </label>
+                <label style="padding-left: 55px;">
+                    <input type="radio" name="T1" value="A1-3" required>
+                    命中注定的相遇！直接搜索发现本网站
+                </label>
+
+            </fieldset><br>
+
+            <fieldset class="inside">
+                <legend class="inside"><span style="color: red;">*</span> 总体印象</legend><br>
+
+                <p class="text" style="padding: 0; margin: 0;">请为本网站打一个总分（最低分1分，满分10分）：<input type="number" name="score" min="1" max="10" step="1"></p><br>
+
+                <p class="text" style="padding: 0; margin: 0;">1. 你认为本网站的用户体验总体如何？</p>     
+                <div class="rating">
+                    <input type="radio" id="starT2-1-5" name="T2-1" value="5" required>
+                    <label for="starT2-1-5">&#9733;<span hidden>优秀</span></label>
+                    <input type="radio" id="starT2-1-4" name="T2-1" value="4" required>
+                    <label for="starT2-1-4">&#9733;<span hidden>良好</span></label>
+                    <input type="radio" id="starT2-1-3" name="T2-1" value="3" required>
+                    <label for="starT2-1-3">&#9733;<span hidden>一般</span></label>
+                    <input type="radio" id="starT2-1-2" name="T2-1" value="2" required>
+                    <label for="starT2-1-2">&#9733;<span hidden>较差</span></label>
+                    <input type="radio" id="starT2-1-1" name="T2-1" value="1" required>
+                    <label for="starT2-1-1">&#9733;<span hidden>很差</span></label>
+                    <div id="rating-text-1" class="rating-text" style="padding: 4px 20px 0 0;"></div>
+                </div>      
+
+                <p class="text" style="padding: 0; margin: 0;">2. 你认为本网站的内容质量总体如何？</p>     
+                <div class="rating">
+                    <input type="radio" id="starT2-2-5" name="T2-2" value="5" required>
+                    <label for="starT2-2-5">&#9733;<span hidden>优秀</span></label>
+                    <input type="radio" id="starT2-2-4" name="T2-2" value="4" required>
+                    <label for="starT2-2-4">&#9733;<span hidden>良好</span></label>
+                    <input type="radio" id="starT2-2-3" name="T2-2" value="3" required>
+                    <label for="starT2-2-3">&#9733;<span hidden>一般</span></label>
+                    <input type="radio" id="starT2-2-2" name="T2-2" value="2" required>
+                    <label for="starT2-2-2">&#9733;<span hidden>较差</span></label>
+                    <input type="radio" id="starT2-2-1" name="T2-2" value="1" required>
+                    <label for="starT2-2-1">&#9733;<span hidden>很差</span></label>
+                    <div id="rating-text-2" class="rating-text" style="padding: 4px 20px 0 0;"></div>
+                </div>
+
+                <p class="text" style="padding: 0; margin: 0;">3. 你认为本网站的视觉设计总体如何？</p>     
+                <div class="rating">
+                    <input type="radio" id="starT2-3-5" name="T2-3" value="5" required>
+                    <label for="starT2-3-5">&#9733;<span hidden>优秀</span></label>
+                    <input type="radio" id="starT2-3-4" name="T2-3" value="4" required>
+                    <label for="starT2-3-4">&#9733;<span hidden>良好</span></label>
+                    <input type="radio" id="starT2-3-3" name="T2-3" value="3" required>
+                    <label for="starT2-3-3">&#9733;<span hidden>一般</span></label>
+                    <input type="radio" id="starT2-3-2" name="T2-3" value="2" required>
+                    <label for="starT2-3-2">&#9733;<span hidden>较差</span></label>
+                    <input type="radio" id="starT2-3-1" name="T2-3" value="1" required>
+                    <label for="starT2-3-1">&#9733;<span hidden>很差</span></label>
+                    <div id="rating-text-3" class="rating-text" style="padding: 4px 20px 0 0;"></div>
+                </div>
+
+                <p class="text" style="padding: 0; margin: 0;">4. 你认为本网站的服务与安全性如何？</p>     
+                <div class="rating">
+                    <input type="radio" id="starT2-4-5" name="T2-4" value="5" required>
+                    <label for="starT2-4-5">&#9733;<span hidden>优秀</span></label>
+                    <input type="radio" id="starT2-4-4" name="T2-4" value="4" required>
+                    <label for="starT2-4-4">&#9733;<span hidden>良好</span></label>
+                    <input type="radio" id="starT2-4-3" name="T2-4" value="3" required>
+                    <label for="starT2-4-3">&#9733;<span hidden>一般</span></label>
+                    <input type="radio" id="starT2-4-2" name="T2-4" value="2" required>
+                    <label for="starT2-4-2">&#9733;<span hidden>较差</span></label>
+                    <input type="radio" id="starT2-4-1" name="T2-4" value="1" required>
+                    <label for="starT2-4-1">&#9733;<span hidden>很差</span></label>
+                    <div id="rating-text-4" class="rating-text" style="padding: 4px 20px 0 0;"></div>
+                </div>
+
+                <script src="../assets/js/starmark.js"></script>
+            </fieldset><br>
+
+            <fieldset class="inside">
+                <legend class="inside"><span style="color: red;">*</span> 用户体验</legend><br>
+
+                <p class="text" style="padding: 0; margin: 0;">1. 你认为本网站的界面设计是否直观清晰？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-1" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-1" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">2. 你认为本网站的导航是否易于定位内容和浏览？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-2" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-2" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">3. 你对本网站的响应速度是否满意？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-3" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-3" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">4. 你认为本网站的页面布局是否美观？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-4" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-4" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">5. 你认为本网站的交互逻辑是否流畅？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-5" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-5" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">6. 你认为本网站在不同设备（桌面端、移动端）上的兼容性和优化如何？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-6" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T3-6" value="no" required> 否
+                </label>
+
+            </fieldset><br>
+
+            <fieldset class="inside">
+                <legend class="inside"><span style="color: red;">*</span> 内容质量</legend><br>
+
+                <p class="text" style="padding: 0; margin: 0;">1. 你认为本网站的内容是否充实而丰富多样？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T4-1" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T4-1" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">2. 你认为本网站的提供的信息和资源是否准确、可信？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T4-2" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T4-2" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">3. 你认为本网站的内容是否对你产生了积极的影响（有实质性帮助，认同感或其他）？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T4-3" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T4-3" value="no" required> 否
+                </label>
+
+            </fieldset><br>
+
+            <fieldset class="inside">
+                <legend class="inside"><span style="color: red;">*</span> 视觉设计</legend><br>
+
+                <p class="text" style="padding: 0; margin: 0;">1. 你认为本网站的色彩搭配是否合理？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T5-1" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T5-1" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">2. 你认为本网站使用的图标和指示性标识是否简明易懂？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T5-2" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T5-2" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">3. 你认为本网站的字体和排版是否清晰易读？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T5-3" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T5-3" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">4. 你认为本网站使用的多媒体资源（图片、视频）等是否吸引人？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T5-4" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T5-4" value="no" required> 否
+                </label>
+
+            </fieldset><br>
+
+            <fieldset class="inside">
+                <legend class="inside"><span style="color: red;">*</span> 服务与安全性</legend><br>
+
+                <p class="text" style="padding: 0; margin: 0;">1. 你认为本网站是否提供了良好的反馈渠道（即当前网页设计的怎么样）？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T6-1" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T6-1" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">2. 你认为本网站对 BUG 和用户问题解决的速度和质量如何？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T6-2" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T6-2" value="no" required> 否
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">3. 你认为本网站是否有效保护了用户隐私和信息安全？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T6-3" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T6-3" value="no" required> 否
+                </label>
+
+            </fieldset><br>
+
+            <fieldset class="inside">
+                <legend class="inside"><span style="color: red;">*</span> 访问与分享</legend><br>
+
+                <p class="text" style="padding: 0; margin: 0;">1. 你有多大可能性再次访问本网站？</p>
+                <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T7-1" value="often" required> 会经常来访 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T7-1" value="sometimes" required> 会偶尔来访 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T7-1" value="hardly" required> 隔很久来看一次 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="T7-1" value="never" required> 不想再来了
+                </label>
+
+                <p class="text" style="padding: 0; margin: 0;">2. 你有多大可能性将本网站分享给你周围的人？</p>
+                <label style="padding-left: 55px;">
+                    <input type="radio" name="T7-2" value="A7-2-1" requied>
+                    非常愿意并已经分享
+                </label>
+                <label style="padding-left: 55px;">
+                    <input type="radio" name="T7-2" value="A7-2-2" required>
+                    如果我认为他们会对这个网站的内容感兴趣 / 这个网站的内容有他们所需要的部分，我会分享
+                </label>
+                <label style="padding-left: 55px;">
+                    <input type="radio" name="T7-2" value="A7-2-3" required>
+                    我不想分享此网站给他人
+                </label>
+
+            </fieldset><br>
+
+            <button class="inside" id="warning">提交</button>
+        </form>
+    </fieldset>
+
+    <fieldset class="outside">
+        <legend id="personal" class="outside">自主反馈</legend><br>
+        <form target="_blank" action="../assets/php/feedback_personal.php" method="get" autocomplete="off">
+            <label><span style="color: red;">*</span> 您想反馈的部分：&nbsp;
+                网站网页：&nbsp;
+                <select required>
+                    <option value="" selected disabled hidden>请选择</option>
+                    <option value="主页">H.S. Studio 主页</option>
+                    <optgroup label="H.S. Studio 主页">
+                        <option value="板绘作品">板绘作品</option>
+                        <option value="编程开发">编程开发</option>
+                        <option value="诗歌创作">诗歌创作</option>
+                        <option value="志愿服务">志愿服务</option>
+                    </optgroup>
+                    <option value="用户反馈">用户反馈</option>
+                    <option value="更新日志">更新日志</option>
+                    <option value="网站地图">网站地图</option>
+                    <optgroup label="网站信息">
+                        <option value="隐私政策">隐私政策</option>
+                        <option value="服务条款">服务条款</option>
+                        <option value="关于我们">关于我们</option>
+                    </optgroup>
+                    <option value="其他">其他</option>
+                </select><br>
+                <div style="padding-left: 16.35ch;">具体内容：&nbsp;
+                    <select required>
+                        <option value="" selected disabled hidden>请选择</option>
+                        <option value="网页布局">网页布局与用户交互</option>
+                        <option value="网页内容">网站内容</option>
+                        <option value="设备兼容性">设备兼容性</option>
+                        <option value="美术设计（颜色、图标等）">美术设计（颜色、图标等）</option>
+                        <option value="侵权与被侵权">侵权与被侵权</option>
+                        <option value="其他">其他</option>
+                    </select><br>
+                </div>
+            </label>
+
+            <label><span style="color: red;">*</span> 反馈内容：<br><br>
+                <textarea name="feedback" rows="7" cols="60" wrap="hard" required></textarea><br>
+                <button class="inside" id="warning">重置</button>
+            </label><br>
+
+            <label>请留下您的联系方式，以便我们进行回访并表达感谢：</label><br>
+            <label>电子邮箱 &nbsp;<i class="fa-solid fa-envelope"></i> &nbsp;&nbsp;&nbsp;<input tpye="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="&quot;example@example.com&quot;" size="30"></label>
+            <label>联系电话 &nbsp;<i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;<input type="tel" name="tel" pattern="^\+?[0-9()-\s]{7,20}$" placeholder="&quot;+86 18833336666&quot;" size="30" maxlength="15"></label><br>
+
+            <button class="inside" id="warning">提交</button>
+        </form>
+    </fieldset>
+
+    <script>
+        const myButton = document.getElementById('warning');
+        myButton.addEventListener('click', function() {
+            alert('该功能暂不可用，敬请期待！');
+        });
+    </script>
     
     <footer>
         <p>&copy; 2024 <span style="font-family: 'Shrikhand', cursive;">H.S. Studio</span>&nbsp;&nbsp;&nbsp;All Rights Reserved.</p>
