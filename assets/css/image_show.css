@@ -44,7 +44,7 @@
 
 .modal-content {
     margin: auto;
-    margin-top: 2%;
+    margin-top: 80px;
     display: block;
     max-width: 100%;
     max-height: calc(100% - 120px);

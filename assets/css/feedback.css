@@ -1,0 +1,64 @@
+fieldset.outside {
+    border: 4px solid rgb(97, 71, 241);
+    border-radius: 10px;
+    padding:  20px 50px 20px 50px;
+    margin: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+fieldset.inside {
+    border: 2px dotted rgb(97, 71, 241);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+legend.outside {
+    font-size: 22px;
+    color: rgb(97, 71, 241);
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+}
+
+legend.inside {
+    font-size: 20px;
+    color: rgb(97, 71, 241);
+    padding: 0 5px 0 5px;
+}
+
+label {
+    font-size: 18px;
+    color: rgb(97, 71, 241);
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.rating input:checked ~ label {
+    color: #f90;
+}
+
+.rating-text {
+    font-size: 18px;
+    color: #333;
+}
