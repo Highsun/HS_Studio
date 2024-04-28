@@ -1,4 +1,4 @@
-button.inside {
+button.trigger {
     display: inline-block;
     padding: 10px 12px;
     font-size: 16px;
@@ -12,6 +12,6 @@ button.inside {
     transition: background-color 0.3s;
 }
 
-button.inside:hover {
+button.trigger:hover {
     background-color: rgb(151, 127, 243);
 }
