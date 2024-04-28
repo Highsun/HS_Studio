@@ -188,7 +188,7 @@
                     <input type="radio" name="T4-2" value="no" required> 否
                 </label>
 
-                <p class="text" style="padding: 0; margin: 0;">3. 你认为本网站的内容是否对你产生了积极的影响（有实质性帮助，认同感或其他）？</p>
+                <p class="text" style="padding: 0; margin: 0;">3. 你认为本网站的内容是否对你产生了积极的影响（有实质性帮助，认同本网站的内容或其他）？</p>
                 <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="radio" name="T4-3" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="radio" name="T4-3" value="no" required> 否
@@ -228,7 +228,7 @@
             <fieldset class="inside">
                 <legend class="inside"><span style="color: red;">*</span> 服务与安全性</legend><br>
 
-                <p class="text" style="padding: 0; margin: 0;">1. 你认为本网站是否提供了良好的反馈渠道（即当前网页设计的怎么样）？</p>
+                <p class="text" style="padding: 0; margin: 0;">1. 你认为本网站是否提供了良好的反馈渠道？</p>
                 <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="radio" name="T6-1" value="yes" required> 是 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="radio" name="T6-1" value="no" required> 否
@@ -275,7 +275,7 @@
 
             </fieldset><br>
 
-            <button class="inside" id="warning">提交</button>
+            <button class="trigger">提交</button>
         </form>
     </fieldset>
 
@@ -317,23 +317,25 @@
             </label>
 
             <label><span style="color: red;">*</span> 反馈内容：<br><br>
-                <textarea name="feedback" rows="7" cols="60" wrap="hard" required></textarea><br>
-                <button class="inside" id="warning">重置</button>
+                <textarea name="feedback" wrap="soft" required></textarea><br>
+                <button class="trigger">重置</button>
             </label><br>
 
             <label>请留下您的联系方式，以便我们进行回访并表达感谢：</label><br>
-            <label>电子邮箱 &nbsp;<i class="fa-solid fa-envelope"></i> &nbsp;&nbsp;&nbsp;<input tpye="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="&quot;example@example.com&quot;" size="30"></label>
+            <label>电子邮箱 &nbsp;<i class="fa-solid fa-envelope"></i> &nbsp;&nbsp;&nbsp;<input type="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="&quot;example@example.com&quot;" size="30"></label>
             <label>联系电话 &nbsp;<i class="fa-solid fa-phone"></i> &nbsp;&nbsp;&nbsp;<input type="tel" name="tel" pattern="^\+?[0-9()-\s]{7,20}$" placeholder="&quot;+86 18833336666&quot;" size="30" maxlength="15"></label><br>
 
-            <button class="inside" id="warning">提交</button>
+            <button class="trigger">提交</button>
         </form>
     </fieldset>
 
     <script>
-        const myButton = document.getElementById('warning');
-        myButton.addEventListener('click', function() {
-            alert('该功能暂不可用，敬请期待！\n如果浏览器自动下载了一个后缀名为.php的文件，请放心删除该文件即可。');
-        });
+        const myButtons = document.getElementsByClassName('trigger');
+        for (let i = 0; i < myButtons.length; i++) {
+            myButtons[i].addEventListener('click', function() {
+                alert('该功能暂不可用，敬请期待！\n如果浏览器自动下载了一个后缀名为.php的文件，请放心删除该文件即可。');
+            });
+        }
     </script>
     
     <footer>

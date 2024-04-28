@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.18)  28 APR 2024 17:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.18)  28 APR 2024 18:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**privacy_policy
-(./privacy_policy.tex
+**service_terms
+(./service_terms.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -359,8 +359,8 @@ Package fontspec Info: Font family 'PingFangSC(0)' created for font 'PingFang
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 Package hyperref Info: Option `colorlinks' set `true' on input line 13.
-(./privacy_policy.aux)
-\openout1 = `privacy_policy.aux'.
+(./service_terms.aux)
+\openout1 = `service_terms.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -449,9 +449,9 @@ Package color Info: Driver file: xetex.def on input line 149.
 File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 19.
- (./privacy_policy.out) (./privacy_policy.out)
+ (./service_terms.out) (./service_terms.out)
 \@outlinefile=\write3
-\openout3 = `privacy_policy.out'.
+\openout3 = `service_terms.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12.045> on input line 22.
@@ -461,17 +461,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 22.
  [1
 
-] [2] (./privacy_policy.aux)
-Package rerunfilecheck Info: File `privacy_policy.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+] [2] [3] (./service_terms.aux)
+Package rerunfilecheck Info: File `service_terms.out' has not changed.
+(rerunfilecheck)             Checksum: 9352A698E16F13D666172FC9C9D7AC20;458.
  ) 
 Here is how much of TeX's memory you used:
- 13458 strings out of 476683
- 308826 string characters out of 5804047
- 1857018 words of memory out of 5000000
- 33511 multiletter control sequences out of 15000+600000
- 517345 words of font info for 84 fonts, out of 8000000 for 9000
+ 13541 strings out of 476683
+ 314360 string characters out of 5804047
+ 1860018 words of memory out of 5000000
+ 33592 multiletter control sequences out of 15000+600000
+ 517361 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,97p,370b,330s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,97p,369b,419s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on privacy_policy.pdf (2 pages).
+Output written on service_terms.pdf (3 pages).
