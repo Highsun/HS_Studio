@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.18)  28 APR 2024 18:36
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.18)  20 JUN 2024 18:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -461,7 +461,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 22.
  [1
 
-] [2] [3] (./service_terms.aux)
+] [2] [3] [4] (./service_terms.aux)
 Package rerunfilecheck Info: File `service_terms.out' has not changed.
 (rerunfilecheck)             Checksum: 9352A698E16F13D666172FC9C9D7AC20;458.
  ) 
@@ -474,4 +474,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  89i,6n,97p,369b,419s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on service_terms.pdf (3 pages).
+Output written on service_terms.pdf (4 pages).
