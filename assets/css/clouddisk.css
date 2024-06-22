@@ -1,0 +1,40 @@
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.file-list {
+    margin-top: 20px;
+}
+
+.folder {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.folder-name {
+    color: rgb(101, 27, 243);
+}
+
+.file-items {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.file-items li {
+    margin: 8px auto;
+}
+
+.file-items li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.file-items li a:hover {
+    color: rgb(101, 27, 243);
+}

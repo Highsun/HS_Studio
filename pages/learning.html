@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/text.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/annotation.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/popup.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/clouddisk.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNW9V05QYS"></script>
@@ -26,7 +27,10 @@
 </head>
 <body>
     <header class="pages" style="border-bottom: 2px solid #fff;"><h1><a href="../index.html">H.S. Studio</a></h1></header>
-    <h2><span style="background-color: #fff;">&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;文 件 库</h2>
+    <h2 style="text-align: center; display: flex; align-items: center; justify-content: center;">
+        <span style="font-size: 32px;"><i class="fa-solid fa-cloud-arrow-down"></i></span>&nbsp;&nbsp;
+        <span style="font-size: 24px;">文 件 库</span>
+    </h2>
 
     <div id="popup" class="popup">
         <button class="close-btn" onclick="closePopup()">&times;</button>
@@ -37,11 +41,33 @@
             对文档存在的纰漏之处，欢迎通过电子邮件 <i class="fa-solid fa-envelope"></i> <a href="mailto:1339687616@qq.com">1339687616@qq.com</a> 指出，感谢细心和善于思考的你为知识的正确性作出的贡献！</p>
         
         <p class="text" style="text-align: center; text-indent: 0; font-weight: bolder;">使用指南与注意事项</p>
-        <p class="text">1、文件库中的资料按照“年级 — 学科 - 类别”的层次分类整理，所有文件均可通过点击“下载”按钮存储到本地。</p>
+        <p class="text">1、文件库中的资料按照“年级 - 学科 - 文件”的层次分类整理，所有文件均可通过点击“下载”按钮存储到本地。</p>
         <p class="text">2、文件库中暂不包含教师上课用 PPT 和课程作业答案等资料，原因及详情见<a href="service_terms.html">服务条款</a>。</p>
         <p class="text">最后祝你学习进步、天天开心！ (ง •̀_•́)ง</p>
     </div>
     <script src="../assets/js/popup.js"></script>
+
+    <main class="container">
+        <div class="file-list">
+            <div class="folder">
+                <span><i class="fa-solid fa-folder-closed"></i></span>&nbsp;&nbsp;
+                <span class="folder-name">大二下期（2024春）</span>
+                <ul class="file-items">
+                    <li>
+                        <div class="folder">
+                            <span><i class="fa-solid fa-folder-closed"></i></span>&nbsp;&nbsp;
+                            <span class="folder-name">数学建模</span>
+                            <ul class="file-items">
+                                <li><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;<a href="../data/clouddisk/大二下期（2024春）/数学建模/print_6pic_v1.1.pdf" download>数学建模考试资料打印版（6pics）</a></li>
+                                <li><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;<a href="../data/clouddisk/大二下期（2024春）/数学建模/all_6pic_v0.2.pdf" download>数学建模考试资料（6pics）</a></li>
+                                <li><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;<a href="../data/clouddisk/大二下期（2024春）/数学建模/all_9pic_v0.2.pdf" download>数学建模考试资料（9pics）</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2024 <span style="font-family: 'Shrikhand', cursive;">H.S. Studio</span>&nbsp;&nbsp;&nbsp;All Rights Reserved.</p>
